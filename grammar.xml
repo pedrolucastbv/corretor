@@ -2440,4 +2440,342 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
 
   </category>
 
+  <!-- ============================================================ -->
+  <!-- VÍRGULA — Regras de pontuação essenciais do português        -->
+  <!-- ============================================================ -->
+  <category id="PT_BR_VIRGULA" name="Vírgula" type="grammar">
+
+    <!-- VÍRGULA ANTES DE "MAS" (conjunção adversativa) -->
+    <rulegroup id="VIRGULA_ANTES_MAS" name="Vírgula antes de mas">
+      <short>Falta vírgula antes de conjunção adversativa.</short>
+      <rule>
+        <antipattern>
+          <token>não</token>
+          <token>só</token>
+          <token>mas</token>
+          <token>também</token>
+          <example>Ela não só estuda mas também trabalha.</example>
+        </antipattern>
+        <antipattern>
+          <token>não</token>
+          <token>apenas</token>
+          <token>mas</token>
+          <token>também</token>
+        </antipattern>
+        <pattern>
+          <token postag="_PUNCT_COMMA" negate="yes"/>
+          <token regexp="yes">\p{Ll}.*</token>
+          <marker>
+            <token>mas</token>
+          </marker>
+        </pattern>
+        <message>Antes de conjunção adversativa, use vírgula: <suggestion>, mas</suggestion>.</message>
+        <example correction=", mas">Estudei muito <marker>mas</marker> não passei.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- VÍRGULA ANTES DE "PORÉM" / "CONTUDO" / "TODAVIA" / "ENTRETANTO" -->
+    <rulegroup id="VIRGULA_ANTES_POREM" name="Vírgula antes de porém/contudo/todavia/entretanto">
+      <short>Falta vírgula antes de conjunção adversativa.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START" negate="yes"/>
+          <token regexp="yes">\p{Ll}.*</token>
+          <marker>
+            <token regexp="yes">porém|contudo|todavia|entretanto</token>
+          </marker>
+        </pattern>
+        <message>Conjunção adversativa deslocada exige vírgula antes: <suggestion>, \2</suggestion>.</message>
+        <example correction=", porém">Tentei <marker>porém</marker> não consegui.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- VOCATIVO no início sem vírgula -->
+    <rulegroup id="VOCATIVO_INICIO" name="Vocativo no início sem vírgula">
+      <short>Falta vírgula após o vocativo.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START"/>
+          <marker>
+            <token regexp="yes">Senhor|Senhora|Doutor|Doutora|Professor|Professora|Senhorita|Caro|Cara|Prezado|Prezada|Querido|Querida|Amigo|Amiga|Meu|Minha|Ó</token>
+            <token regexp="yes">\p{Ll}.*</token>
+          </marker>
+          <token>,</token>
+          <token regexp="yes">\p{L}.*</token>
+        </pattern>
+        <message>Se a intenção for usar vocativo, a vírgula é obrigatória após o nome da pessoa chamada: <suggestion>\3,</suggestion>.</message>
+        <example correction="Senhor Silva,"><marker>Senhor Silva</marker> por favor assine aqui.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "OU SEJA" / "ISTO É" / "A SABER" sem vírgula antes -->
+    <rulegroup id="OU_SEJA_SEM_VIRGULA" name="Expressões explicativas sem vírgula">
+      <short>Expressão explicativa sem vírgula.</short>
+      <rule>
+        <pattern>
+          <marker>
+            <token regexp="yes">isto|ou|a</token>
+            <token regexp="yes">é|seja|saber</token>
+          </marker>
+        </pattern>
+        <message>Expressão explicativa deve vir entre vírgulas. Use <suggestion>, \1 \2,</suggestion>.</message>
+        <example correction=", ou seja,">Ele é poliglota <marker>ou seja</marker> fala várias línguas.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "LOGO" conclusivo sem vírgula antes -->
+    <rulegroup id="LOGO_CONCLUSIVO" name="Logo conclusivo sem vírgula">
+      <short>Falta vírgula antes de "logo" conclusivo.</short>
+      <rule>
+        <antipattern>
+          <token postag="SENT_START"/>
+          <token>Logo</token>
+          <example>Logo que chegou, começou a chover.</example>
+        </antipattern>
+        <antipattern>
+          <token regexp="yes">o|a|os|as</token>
+          <token>logo</token>
+          <example>O logo da empresa é bonito.</example>
+        </antipattern>
+        <pattern>
+          <token postag="_PUNCT_COMMA" negate="yes"/>
+          <token regexp="yes">\p{Ll}.*</token>
+          <marker>
+            <token>logo</token>
+          </marker>
+        </pattern>
+        <message>Antes de "logo" conclusivo (= portando), use vírgula: <suggestion>, logo</suggestion>.</message>
+        <example correction=", logo">Penso <marker>logo</marker> existo.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "POIS" conclusivo (posposto ao verbo) sem vírgula -->
+    <rulegroup id="POIS_CONCLUSIVO" name="Pois conclusivo sem vírgula">
+      <short>Falta vírgula antes de "pois" conclusivo.</short>
+      <rule>
+        <antipattern>
+          <token postag="SENT_START"/>
+          <token>Pois</token>
+        </antipattern>
+        <pattern>
+          <token postag="V.+" postag_regexp="yes"/>
+          <marker>
+            <token>pois</token>
+          </marker>
+        </pattern>
+        <message>Quando "pois" é conclusivo (= portanto) e aparece após o verbo, use vírgula antes: <suggestion>, pois</suggestion>.</message>
+        <example correction=", pois">Ela passou <marker>pois</marker> estudou muito.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- Advérbio longo (-mente) no início da frase sem vírgula -->
+    <rulegroup id="ADV_LONGO_INICIO" name="Adjunto adverbial longo sem vírgula">
+      <short>Adjunto adverbial deslocado pede vírgula.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START"/>
+          <marker>
+            <token regexp="yes">[A-Z].+mente</token>
+          </marker>
+          <token postag="SPS00|CC|CS" postag_regexp="yes" negate="yes"/>
+        </pattern>
+        <message>Adjunto adverbial deslocado para o início da frase pede vírgula. Use <suggestion>\1,</suggestion>.</message>
+        <example correction="Infelizmente,"><marker>Infelizmente</marker> não poderei comparecer.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "ALÉM DISSO" / "NO ENTANTO" / "POR EXEMPLO" deslocados sem vírgula -->
+    <rulegroup id="ALEM_DISSO_SEM_VIRGULA" name="Conectivo deslocado sem vírgula">
+      <short>Conectivo deslocado pede vírgula.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START" negate="yes"/>
+          <token regexp="yes">\p{Ll}.*</token>
+          <marker>
+            <token regexp="yes">além|apesar</token>
+            <token regexp="yes">disso|dela|dele|disto|daquilo</token>
+          </marker>
+        </pattern>
+        <message>Conectivo deslocado na frase pede vírgula antes. Use <suggestion>, \2 \3</suggestion>.</message>
+        <example correction=", além disso">O projeto está atrasado <marker>além disso</marker> estourou o orçamento.</example>
+      </rule>
+    </rulegroup>
+
+  </category>
+
+  <!-- ============================================================ -->
+  <!-- INFINITIVO — Orações reduzidas + vírgula obrigatória         -->
+  <!-- ============================================================ -->
+  <category id="PT_BR_INFINITIVO" name="Infinitivo" type="grammar">
+
+    <!-- "AO + INFINITIVO" no início sem vírgula -->
+    <rulegroup id="AO_INFINITIVO_VIRGULA" name="Oração reduzida com Ao + infinitivo sem vírgula">
+      <short>Oração reduzida de infinitivo anteposta exige vírgula.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START"/>
+          <marker>
+            <token>Ao</token>
+          </marker>
+          <token postag="VMN0000" postag_regexp="yes"/>
+          <token>,</token>
+          <token regexp="yes">\p{L}.*</token>
+        </pattern>
+        <message>Oração reduzida de infinitivo com "Ao" no início exige vírgula após o verbo. Use <suggestion>Ao</suggestion> e insira vírgula depois do complemento.</message>
+        <example correction="Ao">Ao chegar em casa percebi o erro.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "PARA + INFINITIVO" no início sem vírgula -->
+    <rulegroup id="PARA_INFINITIVO_VIRGULA" name="Oração reduzida com Para + infinitivo sem vírgula">
+      <short>Oração reduzida final anteposta exige vírgula.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START"/>
+          <marker>
+            <token>Para</token>
+          </marker>
+          <token postag="VMN0000" postag_regexp="yes"/>
+          <token>,</token>
+          <token regexp="yes">\p{L}.*</token>
+        </pattern>
+        <message>Oração reduzida final com "Para" no início da frase exige vírgula após o verbo e seus complementos. Use <suggestion>Para</suggestion> e insira vírgula.</message>
+        <example correction="Para">Para entender o problema é preciso estudar.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "ANTES DE + INFINITIVO" no início sem vírgula -->
+    <rulegroup id="ANTES_DE_INFINITIVO" name="Antes de + infinitivo no início sem vírgula">
+      <short>Oração reduzida temporal anteposta exige vírgula.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START"/>
+          <marker>
+            <token>Antes</token>
+            <token>de</token>
+          </marker>
+          <token postag="VMN0000" postag_regexp="yes"/>
+          <token>,</token>
+          <token regexp="yes">\p{L}.*</token>
+        </pattern>
+        <message>Oração reduzida com "Antes de" no início exige vírgula. Use <suggestion>Antes de</suggestion> e insira vírgula após os complementos do verbo.</message>
+        <example correction="Antes de">Antes de começar leia as instruções.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "DEPOIS DE + INFINITIVO" no início sem vírgula -->
+    <rulegroup id="DEPOIS_DE_INFINITIVO" name="Depois de + infinitivo no início sem vírgula">
+      <short>Oração reduzida temporal anteposta exige vírgula.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START"/>
+          <marker>
+            <token>Depois</token>
+            <token>de</token>
+          </marker>
+          <token postag="VMN0000" postag_regexp="yes"/>
+          <token>,</token>
+          <token regexp="yes">\p{L}.*</token>
+        </pattern>
+        <message>Oração reduzida com "Depois de" no início exige vírgula. Use <suggestion>Depois de</suggestion> e insira vírgula após os complementos.</message>
+        <example correction="Depois de">Depois de terminar o trabalho fomos comemorar.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "A + INFINITIVO" condicional no início sem vírgula -->
+    <rulegroup id="A_INFINITIVO_CONDICIONAL" name="Infinitivo condicional sem vírgula">
+      <short>Infinitivo com valor condicional anteposto exige vírgula.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START"/>
+          <token>A</token>
+          <marker>
+            <token postag="VMN0000" postag_regexp="yes"/>
+          </marker>
+          <token>,</token>
+          <token regexp="yes">\p{L}.*</token>
+        </pattern>
+        <message>Infinitivo com valor condicional anteposto ("A persistir...", "A continuar...") exige vírgula. Use <suggestion>\3,</suggestion>.</message>
+        <example correction="persistirem,">A persistirem os sintomas <marker>persistirem</marker> consulte um médico.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "AO + INFINITIVO + COMPLEMENTO + VÍRGULA" — padrão completo -->
+    <rulegroup id="AO_INFINITIVO_COMPLETO" name="Ao + infinitivo + complemento sem vírgula">
+      <short>Oração reduzida longa anteposta exige vírgula.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START"/>
+          <token>Ao</token>
+          <token postag="VMN0000" postag_regexp="yes"/>
+          <token postag="D.+|NC.+|SPS00.+" postag_regexp="yes" min="1" max="3"/>
+          <marker>
+            <token postag="_PUNCT_COMMA" negate="yes"/>
+          </marker>
+          <token postag="VMIP.+" postag_regexp="yes"/>
+        </pattern>
+        <message>Oração reduzida de infinitivo longa no início da frase exige vírgula antes da oração principal. Use <suggestion>,</suggestion>.</message>
+        <example correction=",">Ao analisar os resultados da pesquisa <marker/>a equipe concluiu que as hipóteses estavam corretas.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "PARA + INFINITIVO + COMPLEMENTO + VÍRGULA" — padrão completo -->
+    <rulegroup id="PARA_INFINITIVO_COMPLETO" name="Para + infinitivo + complemento sem vírgula">
+      <short>Oração reduzida final longa anteposta exige vírgula.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START"/>
+          <token>Para</token>
+          <token postag="VMN0000" postag_regexp="yes"/>
+          <token postag="D.+|NC.+|SPS00.+" postag_regexp="yes" min="1" max="3"/>
+          <marker>
+            <token postag="_PUNCT_COMMA" negate="yes"/>
+          </marker>
+          <token postag="VMIP.+" postag_regexp="yes"/>
+        </pattern>
+        <message>Oração reduzida final longa no início da frase exige vírgula antes da oração principal. Use <suggestion>,</suggestion>.</message>
+        <example correction=",">Para garantir a segurança dos passageiros <marker/>a companhia implementou novos protocolos.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "AO + INFINITIVO" — quebra de período composto -->
+    <rulegroup id="AO_INFINITIVO_PERIODO" name="Ao + infinitivo sem vírgula no período composto">
+      <short>Período composto: oração reduzida pede vírgula.</short>
+      <rule>
+        <pattern>
+          <token postag="_PUNCT_COMMA" negate="yes"/>
+          <token postag="SPS00|CC|V.+" postag_regexp="yes" min="0" max="2"/>
+          <marker>
+            <token>Ao</token>
+          </marker>
+          <token postag="VMN0000" postag_regexp="yes"/>
+          <token postag="D.+|NC.+|PP.+" postag_regexp="yes" min="0" max="3"/>
+          <token postag="VMIP.+" postag_regexp="yes"/>
+        </pattern>
+        <message>Oração reduzida de infinitivo intercalada ou justaposta exige vírgula. Use <suggestion>, ao</suggestion>.</message>
+        <example correction=", ao">O motorista perdeu o controle <marker>ao</marker> fazer a curva o veículo capotou.</example>
+      </rule>
+    </rulegroup>
+
+    <!-- "PARA + NÃO + INFINITIVO" sem vírgula -->
+    <rulegroup id="PARA_NAO_INFINITIVO" name="Para não + infinitivo no início sem vírgula">
+      <short>Oração reduzida final negativa anteposta exige vírgula.</short>
+      <rule>
+        <pattern>
+          <token postag="SENT_START"/>
+          <marker>
+            <token>Para</token>
+            <token>não</token>
+          </marker>
+          <token postag="VMN0000" postag_regexp="yes"/>
+          <token>,</token>
+          <token regexp="yes">\p{L}.*</token>
+        </pattern>
+        <message>A oração "Para não + infinitivo" no início exige vírgula após seus complementos. Use <suggestion>Para não</suggestion> e insira vírgula.</message>
+        <example correction="Para não">Para não esquecer anotei tudo no caderno.</example>
+      </rule>
+    </rulegroup>
+
+  </category>
+
 </rules>
