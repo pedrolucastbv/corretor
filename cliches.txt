@@ -1,0 +1,148 @@
+# cliches-pt-BR.txt
+# Clichês e lugares-comuns do português brasileiro
+# Formato: clichê=sugestão de substituição
+# Use # para desabilitar um item
+#
+# © 2026 - Compilado para corretor PT-BR
+#
+
+# Clichês de intensidade — advérbios vazios
+absolutamente certo=certo
+absolutamente errado=errado
+absolutamente necessário=necessário
+absolutamente impossível=impossível
+totalmente convencido=convencido
+profundamente grato=muito grato
+imensamente feliz=muito feliz
+plenamente satisfeito=satisfeito
+completamente errado=errado
+totalmente certo=certo
+totalmente errado=errado
+
+# Expressões batidas — jargão corporativo e burocrático
+a nível de=em relação a|quanto a|no âmbito de
+# a toque de caixa=rapidamente|com pressa
+acertar os ponteiros=alinhar|entrar em acordo
+colocar a carroça na frente dos bois=precipitar-se|inverter a ordem
+chover no molhado=ser redundante|repetir o óbvio
+dar a volta por cima=recuperar-se|superar
+deixar a desejar=ser insatisfatório|frustrar
+fazer por merecer=merecer
+via de regra=em regra|geralmente
+em que pese=apesar de|embora
+no que tange a=quanto a|em relação a|sobre
+no que diz respeito a=sobre|quanto a
+haja vista=prova disso|veja-se|como mostra
+destarte=assim|dessa forma|portanto
+outrossim=também|além disso|igualmente
+de mister=necessário|preciso
+data venia=com a devida vênia|com o devido respeito
+# data maxima venia=com o máximo respeito
+por derradeiro=por último|finalmente
+de conseguinte=consequentemente|portanto
+in casu=no caso em questão|no caso concreto
+in totum=no todo|totalmente|integralmente
+ex positis=do exposto|pelo exposto
+consoante=conforme|segundo|de acordo com
+no concernente a=quanto a|em relação a
+no que concerne a=quanto a|sobre
+no que pertine a=quanto a|no que se refere a
+à guisa de=a título de|como
+sob a égide de=sob a proteção de|sob o amparo de|sob
+
+# Clichês de redação — lugares-comuns acadêmicos e jornalísticos
+a olhos vistos=visivelmente|claramente
+a passos largos=rapidamente|aceleradamente
+a todo vapor=a pleno ritmo|intensamente
+abrir com chave de ouro=encerrar bem|finalizar com êxito
+agradar a gregos e troianos=agradar a todos|ser consensual
+ao apagar das luzes=no último momento|no final
+# bater as botas=morrer
+bode expiatório=culpado|alvo de acusações
+cair a ficha=compreender|perceber
+cair do cavalo=decepcionar-se|desiludir-se
+cair como uma luva=encaixar perfeitamente|ser ideal
+chutar o balde=desistir|abandonar as regras
+com a faca e o queijo na mão=com todos os recursos|em posição vantajosa
+comer o pão que o diabo amassou=passar por grandes dificuldades
+dar com a língua nos dentes=revelar segredo|denunciar-se
+dar nó em pingo d'água=fazer o impossível
+dar uma mãozinha=ajudar
+de mão beijada=gratuitamente|sem esforço
+descascar o abacaxi=resolver problema difícil
+em plena luz do dia=abertamente|publicamente
+entrar pelo cano=prejudicar-se|dar-se mal
+# estar com a faca e o queijo na mão=ter todos os recursos
+fazer tempestade em copo d'água=exagerar|dramatizar
+levar a ferro e fogo=destruir|arrasar
+mão na roda=grande ajuda|facilitação
+matar a cobra e mostrar o pau=resolver e comprovar
+meter os pés pelas mãos=atrapalhar-se|cometer gafe
+mudar da água para o vinho=mudar completamente
+não dar o braço a torcer=não admitir o erro|manter-se irredutível
+não ter papas na língua=falar sem rodeios|ser franco
+pagar o pato=arcar com a culpa|sofrer consequências
+pensar na morte da bezerra=estar distraído|divagar
+pôr a boca no trombone=denunciar|revelar
+procurar chifre em cabeça de cavalo=procurar problema onde não existe
+puxar o saco=adulterar|bajular
+quebrar o galho=resolver provisoriamente|improvisar
+salvo melhor juízo=a menos que haja melhor entendimento
+segurar vela=acompanhar casal|ser inconveniente
+ser carta fora do baralho=ser excluído|ser irrelevante
+# ser o bom samaritano=ser generoso|ajudar
+ser uma mão na roda=ser muito útil|facilitar
+tapar o sol com a peneira=ignorar o óbvio|disfarçar
+ter sangue de barata=ser muito tolerante|não reagir
+tirar o cavalo da chuva=desistir|não contar com algo
+trocar as bolas=confundir-se|enganar-se
+trocar seis por meia dúzia=não fazer diferença
+um tiro no pé=ato contra si mesmo|autossabotagem
+
+# Clichês jornalísticos
+a qualquer custo=custe o que custar
+a sete chaves=muito bem guardado|em segredo
+acerto de contas=ajuste de contas|vingança
+agora há pouco=recentemente|há instantes
+amplo leque=vasta gama|grande variedade
+# antes de mais nada=em primeiro lugar|primeiramente
+antes de tudo=primeiramente
+# ao longo de=durante|no decorrer de
+causar polêmica=gerar controvérsia
+certeza absoluta=certeza
+# como um todo=no conjunto|globalmente
+duras críticas=críticas severas|críticas contundentes # "duras" é clichê
+em alto estilo=com elegância|com distinção
+# em meio a=entre|durante|no contexto de
+em primeira mão=com exclusividade|em primeira mão
+# em que pese o fato de que=apesar de|embora
+estar em pauta=estar em discussão|ser discutido
+forte esquema=esquema robusto|grande esquema
+# levar a efeito=realizar|efetuar
+marcar presença=comparecer|estar presente
+# no afã de=na ânsia de|com o ímpeto de
+onda de violência=vários atos violentos
+# pano de fundo=contexto|cenário de fundo
+patrocinar um debate=promover|realizar
+prestar esclarecimentos=esclarecer|explicar
+reinou absoluto=prevaleceu|dominou
+respaldar=apoiar|fundamentar
+sem precedentes=inédito|incomparável
+sentido horário=direção horária
+ter como pano de fundo=ter como contexto|situar-se em
+# um leque de opções=várias opções
+via de consequência=consequentemente|por consequência
+
+# Clichês acadêmicos
+ao ensejo de=por ocasião de|quando de
+como já foi dito=como mencionado|como exposto
+de suma importância=muito importante|essencial
+dito de outra forma=em outras palavras
+dito de outro modo=de outra maneira|reformulando
+em linhas gerais=resumidamente|em síntese
+face a=diante de|ante|perante
+na atualidade=atualmente|hoje
+neste sentido=nesse aspecto|assim
+por conseguinte=portanto|consequentemente
+sob o ponto de vista=do ponto de vista|na perspectiva
+tendo em vista=considerando|dado que

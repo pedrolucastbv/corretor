@@ -1,0 +1,160 @@
+# confusion_pairs-pt-BR.txt
+# Pares de palavras confundíveis no português brasileiro
+# Formato: palavra_errada;palavra_correta;etiqueta_PoS
+# © 2026 - Expandido para corretor PT-BR
+#
+
+# Palavras sem acento → com acento circunflexo
+anonimo;anônimo;AQ0MS0
+anonimo;anônimo;NCMS000
+anonima;anônima;AQ0FS0
+anonima;anônima;NCFS000
+anonimas;anônimas;AQ0FP0
+anonimas;anônimas;NCFP000
+bebe;bebê;NCCS000
+bebes;bebês;NCCP000
+cerimonia;cerimônia;NCFS000
+cerimonias;cerimônias;NCFP000
+favonia;favônia;AQ0FS0
+favonias;favônias;AQ0FP0
+favonio;favônio;AQ0MS0
+favonio;favônio;NCMS000
+matrimonio;matrimônio;NCMS000
+matine;matinê;NCFS000
+matines;matinês;NCFP000
+monaco;mônaco;NCMS000
+incomoda;incômoda;AQ0FS0
+incomodas;incômodas;AQ0FP0
+incomodo;incômodo;AQ0MS0
+incomodo;incômodo;NCMS000
+polemica;polêmica;NCFS000
+polemica;polêmica;AQ0FS0
+polemicas;polêmicas;NCFP000
+polemicas;polêmicas;AQ0FP0
+polemico;polêmico;AQ0MS0
+penica;pênica;AQ0FS0
+penica;pênica;NCFS000
+penicas;pênicas;AQ0FP0
+penicas;pênicas;NCFP000
+rose;rosê;AQ0CS0
+roses;rosês;AQ0CP0
+sape;sapê;NCMS000
+sapes;sapês;NCMP000
+sinonima;sinônima;AQ0FS0
+sinonimas;sinônimas;AQ0FP0
+sinonimo;sinônimo;AQ0MS0
+sinonimo;sinônimo;NCMS000
+venero;vênero;AQ0MS0
+vomito;vômito;NCMS000
+emula;êmula;AQ0FS0
+emula;êmula;NCFS000
+emulas;êmulas;AQ0FP0
+emulas;êmulas;NCFP000
+emulo;êmulo;AQ0MS0
+emulo;êmulo;NCMS000
+gemino;gêmino;AQ0MS0
+proemio;proêmio;NCMS000
+tremula;trêmula;AQ0FS0
+tremulas;trêmulas;AQ0FP0
+tremulo;trêmulo;AQ0MS0
+tremulo;trêmulo;NCMS000
+cronometro;cronômetro;NCMS000
+cronica;crônica;NCFS000
+cronica;crônica;AQ0FS0
+cronicas;crônicas;NCFP000
+cronicas;crônicas;AQ0FP0
+cronico;crônico;AQ0MS0
+encomio;encômio;NCMS000
+endromina;endrômina;NCFS000
+endrominas;endrôminas;NCFP000
+podometro;podômetro;NCMS000
+quilometro;quilômetro;NCMS000
+
+# Parônimos comuns — palavras parecidas com significados diferentes
+# acender (pôr fogo) vs ascender (subir)
+# acento (sinal gráfico) vs assento (lugar para sentar)
+# aferir (avaliar) vs auferir (obter)
+# amoral (sem moral) vs imoral (contra a moral)
+# apreçar (ajustar preço) vs apressar (acelerar)
+# área (superfície) vs ária (melodia)
+# arrear (pôr arreios) vs arriar (abaixar)
+# bucheiro (tripeiro) vs buxeiro (arbusto)
+# caçar (perseguir animais) vs cassar (anular)
+# calda (líquido doce) vs cauda (rabo)
+# cartucho (embalagem) vs cartuxo (ordem religiosa)
+# cavaleiro (que monta) vs cavalheiro (educado)
+# celular (telefone; relativo a célula) vs celular (adjetivo)
+# censo (recenseamento) vs senso (juízo)
+# cerrar (fechar) vs serrar (cortar)
+# cessão (ato de ceder) vs seção (divisão) vs sessão (reunião)
+# chá (bebida) vs xá (título)
+# cheque (ordem de pagamento) vs xeque (lance de xadrez; líder)
+# concertar (harmonizar) vs consertar (reparar)
+# concerto (espetáculo) vs conserto (reparo)
+# coser (costurar) vs cozer (cozinhar)
+# deferir (conceder) vs diferir (adiar; diferenciar)
+# degredado (exilado) vs degradado (aviltado; erosão)
+# delatar (denunciar) vs dilatar (expandir)
+# descrição (ato de descrever) vs discrição (reserva)
+# descriminar (inocentar) vs discriminar (diferenciar; segregar)
+# desmistificar (tirar o mistério) vs desmitificar (tirar o mito)
+# despercebido (não notado) vs desapercebido (desprevenido)
+# destratar (insultar) vs distratar (desfazer trato)
+# dispensa (ato de dispensar) vs despensa (local de armazenar)
+# emigrar (sair do país) vs imigrar (entrar no país)
+# eminente (elevado) vs iminente (prestes a acontecer)
+# espectador (que vê) vs expectador (que espera)
+# espiar (observar) vs expiar (pagar culpa)
+# estático (imóvel) vs extático (em êxtase)
+# estofar (colocar estofo) vs estufar (inchar)
+# flagrante (evidente) vs fragrante (perfumado)
+# fluir (correr) vs fruir (usufruir)
+# fusível (dispositivo) vs fuzil (arma)
+# imergir (afundar) vs emergir (vir à tona)
+# incipiente (iniciante) vs insipiente (ignorante)
+# infligir (aplicar pena) vs infringir (violar)
+# interseção (cruzamento) vs intercessão (ato de interceder)
+# laço (nó) vs lasso (frouxo)
+# mandado (ordem judicial) vs mandato (período de governo)
+# ótico (relativo a ouvido) vs óptico (relativo a visão)
+# paço (palácio) vs passo (passada)
+# pleito (disputa) vs preito (homenagem)
+# prescrever (receitar; caducar) vs proscrever (banir)
+# previdência (previsão) vs providência (medida; sorte)
+# ratificar (confirmar) vs retificar (corrigir)
+# recriar (criar de novo) vs recrear (divertir)
+# soar (produzir som) vs suar (transpirar)
+# sortir (abastecer) vs surtir (produzir efeito)
+# sustar (interromper) vs suster (sustentar)
+# tacha (prego) vs taxa (tarifa)
+# tachar (atribuir defeito) vs taxar (cobrar imposto; classificar)
+# tráfego (trânsito) vs tráfico (comércio ilícito)
+# vadear (atravessar rio) vs vadiar (viver na vadiagem)
+# viagem (substantivo) vs viajem (verbo viajar, 3ª pess. plural pres. subj.)
+# vultuoso (volumoso) vs vultoso (de grande valor)
+
+# Confusões de grafia
+# a cerca de (aproximadamente) vs acerca de (sobre) vs há cerca de (faz aproximadamente)
+# a fim (com finalidade) vs afim (semelhante)
+# a par (informado) vs ao par (câmbio)
+# abaixo (embaixo) vs a baixo (para baixo)
+# acima (em cima) vs a cima (para cima)
+# acerca de (sobre) vs a cerca de (distância aproximada)
+# afim (semelhante) vs a fim de (com objetivo de)
+# ao encontro de (a favor) vs de encontro a (contra)
+# ao invés de (ao contrário) vs em vez de (no lugar de)
+# bastante (muito) vs bastantes (muitos)
+# porque (conjunção) vs por que (preposição+pronome) vs por quê (final) vs porquê (substantivo)
+# demais (os outros; além disso) vs de mais (de quantidade)
+# donde (de onde) vs aonde (a que lugar; com verbos de movimento)
+# embaixo (em posição inferior) vs em baixo (modo; sem destaque)
+# encima (em cima) vs em cima (locução adverbial)
+# enfim (finalmente) vs em fim (no final)
+# enquanto (durante) vs em quanto (em que quantidade)
+# então (nesse caso) vs em tão (em tão grande)
+# mas (porém) vs mais (quantidade)
+# mau (ruim) vs mal (advérbio; oposto de bem)
+# onde (lugar fixo) vs aonde (com movimento)
+# senão (caso contrário) vs se não (condicional)
+# sob (debaixo) vs sobre (em cima; acerca)
+# tampouco (também não) vs tão pouco (muito pouco)

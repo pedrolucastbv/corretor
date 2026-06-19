@@ -1,0 +1,136 @@
+# wikipedia-pt-BR.txt
+# Erros comuns encontrados na Wikipédia em português
+# Formato: erro=correção
+# © 2026 - Compilado para corretor PT-BR
+#
+
+# Erros de digitação e ortografia comuns
+correiro eletronico=correio eletrônico
+peso atômico=massa atômica
+
+# Grafia incorreta de nomes próprios e termos técnicos
+cazaquistão=cazaquistão
+irlanda do norte=Irlanda do Norte
+
+# Erros de concordância nominal
+a nível de=em nível de (nível não pede artigo feminino)
+em nível de Brasil=em nível de Brasil|no Brasil
+
+# Erros de regência
+assistir o filme=assistir ao filme
+assistir os vídeos=assistir aos vídeos
+# assistir (ver, presenciar) pede preposição "a"
+custar a acreditar=custar a crer|custar crer
+# custar + infinitivo: custa entender = é difícil entender
+implicar em=implicar (sem preposição)
+implicou em=implicou
+implica em=implica
+# implicar no sentido de "acarretar" não pede preposição
+obedecer os=obedecer aos
+obedeceu os=obedeceu aos
+# obedecer pede preposição "a"
+preferir mais=preferir (sem "mais")
+prefiro mais=prefiro
+preferir do que=preferir a
+preferir que=preferir a que
+# preferir X a Y (sem "mais", sem "do que")
+visar o lucro=visar ao lucro
+visando o=visando ao
+# visar no sentido de "objetivar" pede preposição "a"
+chegar em=chegar a
+chegou em=chegou a
+# chegar pede preposição "a"
+ir em=ir a
+foi em=foi a
+# ir pede preposição "a"
+
+# Erros de crase
+a partir de=a partir de (sem crase, "a" é preposição solta)
+# à partir de → sempre errado (nunca há crase antes de verbo)
+a prazo=a prazo (sem crase, palavra masculina)
+a vista=a vista|à vista
+# "à vista" é a forma consagrada, mas aceita-se "a vista"
+face a=face a (sem crase, palavra feminina sem artigo)
+face à=diante da|em face da
+# regra: "face a" ou "em face de", a crase é controversa
+junto a=junto a (sem crase)
+junto à=junto da
+# "junto a" é aceito sem crase; "junto à" se houver artigo definido
+
+# Erros de colocação pronominal
+não se faz=não se faz (correto: próclise com palavra negativa)
+se faz necessário=faz-se necessário (ênclise sem atrator)
+se pode dizer=pode-se dizer (ênclise no verbo auxiliar)
+# Me dá= Dê-me (não se inicia frase com pronome oblíquo átono)
+# Te amo= Amo-te (formal) ou "Eu te amo" (com sujeito expresso)
+# Lhe entreguei= Entreguei-lhe (ênclise, sem atrator)
+
+# Erros de semântica
+# "ao invés de" (contrário) vs "em vez de" (substituição)
+ao invés do=em vez do
+# "através de" (atravessar) para sentido de "por meio de"
+através dessas medidas=por meio dessas medidas|mediante essas medidas
+através dessa iniciativa=por meio dessa iniciativa
+# "devido a" (causa) vs "dado" / "em virtude de"
+# "fazer" + tempo (impessoal, sempre singular)
+fazem anos=faz anos
+faziam anos=fazia anos
+fizeram anos=fez anos
+# "haver" com sentido de "existir" (impessoal, sempre singular)
+houveram problemas=houve problemas
+haviam pessoas=havia pessoas
+existiam problemas=havia problemas
+# "ter" com sentido de "haver/existir" (coloquial, evitar em texto formal)
+tem pessoas=existem pessoas|há pessoas
+tinha pessoas=existiam pessoas|havia pessoas
+# "onde" apenas para lugar físico
+a música onde=a música em que|a música na qual
+o livro onde=o livro em que|o livro no qual
+o país aonde=o país onde (aonde só com verbos de movimento)
+# "o mesmo" como pronome pessoal (evitar)
+o mesmo disse=ele disse
+a mesma foi=ela foi
+os mesmos são=eles são
+# "se tratando de" (errado: "tratar-se de" é impessoal)
+se tratando de=tratando-se de|no que se refere a
+# "tratar-se de" não pode ser flexionado
+# "qualquer" concorda com "um/uma"
+qualquer um=qualquer um
+qualquer uma=qualquer uma
+# não existe "qualquer" antes de plural — use "quaisquer"
+qualquer pessoas=quaisquer pessoas
+qualquer coisas=quaisquer coisas
+
+# Erros de pontuação
+# vírgula entre sujeito e predicado
+o presidente, disse=o presidente disse
+o carro, passou rápido=o carro passou rápido
+# vírgula entre verbo e complemento
+disse, que=disse que
+afirmou, que=afirmou que
+
+# Estrangeirismos com equivalente em português
+# (termos importados desnecessariamente)
+# deadline= prazo final | data limite
+# feedback= retorno | resposta | comentário
+# homepage= página inicial
+# layout= leiaute | disposição
+# link= ligação | vínculo (ou "link", já aportuguesado)
+# mouse= rato (PT-PT) | mouse (PT-BR, já aportuguesado)
+# online= em linha | conectado | on-line (com hífen)
+# performance= desempenho | atuação
+# print= captura de tela (não "print")
+# site= sítio | site (já aportuguesado com hífen: saite)
+# software= programa | aplicativo | software (já aportuguesado)
+# update= atualização
+# upgrade= atualização | melhoria
+
+# Erros de cacofonia (evitar sequências com duplo sentido)
+# "por cada" → "por" + "cada" sugere "porcada"
+por cada=para cada|em cada
+# "boca dela" → sugere "cadela"
+# "uma mão" → sugere "mamão"
+# "ela tinha" → sugere "latinha"
+# "vou-me já" → sugere "beija" (PT-PT)
+# "como ela" → sugere "moela"
+# "nunca mais" → sugere "camas" (PT-PT)
